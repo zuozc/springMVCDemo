@@ -50,11 +50,11 @@ export PATH=$PATH:${MAVEN_HOME}/bin
 
 ### Create user and group for tomcat
 
-`mkdir /opt/tomcat` ## install tomcat in this dir and use this dir as home dir of user tomcat
+1. `mkdir /opt/tomcat` ## install tomcat in this dir and use this dir as home dir of user tomcat
 
-`groupadd tomcat` ## create a linux tomcat
+2. `groupadd tomcat` ## create a linux tomcat
 
-`useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat` ## create a new tomcat user. We'll make this user a member of the tomcat group, with a home directory of /opt/tomcat (where we will install Tomcat), and with a shell of /bin/false (so nobody can log into the account)
+3. `useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat` ## create a new tomcat user. We'll make this user a member of the tomcat group, with a home directory of /opt/tomcat (where we will install Tomcat), and with a shell of /bin/false (so nobody can log into the account)
 
 ### Download and Unpack
 
